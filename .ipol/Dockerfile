@@ -10,7 +10,7 @@ COPY . .
 WORKDIR $bin/gjknd_1.1
 RUN cmake CMakeLists.txt
 RUN make
-WORKDIR $bin/src
+WORKDIR $bin/gjknd_1.1/src
 RUN cp dll_decomposition $bin
 
 
